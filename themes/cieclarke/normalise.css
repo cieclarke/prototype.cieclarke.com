@@ -1,0 +1,23 @@
+﻿ /* Reset
+Notes: W421
+----------------------------------------------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, 
+form, fieldset, legend, input, textarea, p, blockquote, th, td { 
+	margin: 0;
+	padding: 0;
+}
+form{
+    border: none;
+}
+fieldset, img, table { 
+	border-collapse: separate; /*collapse*/
+	border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+}
+ul {
+	list-style: none;
+}
+ol {
+    list-style-position: inside;
+}
