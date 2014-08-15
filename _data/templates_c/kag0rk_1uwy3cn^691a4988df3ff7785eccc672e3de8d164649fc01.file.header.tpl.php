@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2014-08-01 08:01:29
+<?php /* Smarty version Smarty-3.1.13, created on 2014-08-15 15:50:23
          compiled from "./themes/cieclarke/template/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:142487997353b92879aac414-94972135%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '691a4988df3ff7785eccc672e3de8d164649fc01' => 
     array (
       0 => './themes/cieclarke/template/header.tpl',
-      1 => 1406803281,
+      1 => 1408114219,
       2 => 'file',
     ),
   ),
@@ -120,12 +120,12 @@ foreach ($_from as $_smarty_tpl->tpl_vars['theme']->key => $_smarty_tpl->tpl_var
 $_smarty_tpl->tpl_vars['theme']->_loop = true;
 ?>
 <?php if ($_smarty_tpl->tpl_vars['theme']->value['load_css']){?>
-<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['combine_css'][0][0]->func_combine_css(array('path'=>"themes/".((string)$_smarty_tpl->tpl_vars['theme']->value['id'])."/normalise.css",'order'=>1),$_smarty_tpl);?>
+<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['combine_css'][0][0]->func_combine_css(array('path'=>"themes/".((string)$_smarty_tpl->tpl_vars['theme']->value['id'])."/site/css/bootstrap.css",'order'=>1),$_smarty_tpl);?>
 
-<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['combine_css'][0][0]->func_combine_css(array('path'=>"themes/".((string)$_smarty_tpl->tpl_vars['theme']->value['id'])."/layout.css",'order'=>2),$_smarty_tpl);?>
+<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['combine_css'][0][0]->func_combine_css(array('path'=>"themes/".((string)$_smarty_tpl->tpl_vars['theme']->value['id'])."/site/css/blue_imp/blueimp-gallery.css",'order'=>2),$_smarty_tpl);?>
 
-<?php }?>
-<?php if (!empty($_smarty_tpl->tpl_vars['theme']->value['local_head'])){?><?php echo $_smarty_tpl->getSubTemplate ($_smarty_tpl->tpl_vars['theme']->value['local_head'], $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('load_css'=>$_smarty_tpl->tpl_vars['theme']->value['load_css']), 0);?>
+<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['combine_css'][0][0]->func_combine_css(array('path'=>"themes/".((string)$_smarty_tpl->tpl_vars['theme']->value['id'])."/site/css/blue_imp/bootstrap-image-gallery.css",'order'=>3),$_smarty_tpl);?>
+
 <?php }?>
 <?php } ?>
 
@@ -141,10 +141,6 @@ $_smarty_tpl->tpl_vars['theme']->_loop = true;
 
 <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['get_combined_scripts'][0][0]->func_get_combined_scripts(array('load'=>'header'),$_smarty_tpl);?>
 
-<!--[if lt IE 7]>
-<script type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['ROOT_URL']->value;?>
-themes/default/js/pngfix.js"></script>
-<![endif]-->
 
 <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['combine_script'][0][0]->func_combine_script(array('id'=>"jquery",'load'=>"footer"),$_smarty_tpl);?>
 

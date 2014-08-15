@@ -30,10 +30,10 @@
 {get_combined_css}
 {foreach from=$themes item=theme}
 {if $theme.load_css}
-{combine_css path="themes/`$theme.id`/normalise.css" order=1}
-{combine_css path="themes/`$theme.id`/layout.css" order=2}
+{combine_css path="themes/`$theme.id`/site/css/bootstrap.css" order=1}
+{combine_css path="themes/`$theme.id`/site/css/blue_imp/blueimp-gallery.css" order=2}
+{combine_css path="themes/`$theme.id`/site/css/blue_imp/bootstrap-image-gallery.css" order=3}
 {/if}
-{if !empty($theme.local_head)}{include file=$theme.local_head load_css=$theme.load_css}{/if}
 {/foreach}
 
 
@@ -43,9 +43,6 @@
 {if not empty($page_refresh)    }<meta http-equiv="refresh" content="{$page_refresh.TIME};url={$page_refresh.U_REFRESH}">{/if}
 
 {get_combined_scripts load='header'}
-<!--[if lt IE 7]>
-<script type="text/javascript" src="{$ROOT_URL}themes/default/js/pngfix.js"></script>
-<![endif]-->
 
 {combine_script id="jquery" load="footer"}
 
